@@ -1,0 +1,8 @@
+target
+lib_managed
+src_managed
+project/boot
+.DS_Store
+out
+project/plugins/project/
+Halleyfile
