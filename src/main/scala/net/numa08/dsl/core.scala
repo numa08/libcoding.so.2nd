@@ -12,7 +12,7 @@ class Performer(name : String) {
 	}
 
 	override def toString = {
-		name + "\n" + cs.mkString("\t-", "\n", "\n")
+		name + "\n" + cs.mkString("\t-", "\n\t-", "\n")
 	}
 }
 
