@@ -1,5 +1,7 @@
 package net.numa08.libcoding_so2
 
+import java.lang.Thread
+import scala.util.Random
 import net.numa08.dsl._
 
 object Libcoding_so_2 extends App with Performers{
@@ -22,6 +24,9 @@ object Libcoding_so_2 extends App with Performers{
  - ("WebAudio APIと戯れる").
  - ("HTML5 (JavaScript)").
  - ("せっかくなのでDJさんとイチャイチャしてみたかったんだ")
-	
-	ps.foreach(println(_))
+
+Random.shuffle(ps).foreach { p =>
+		Thread.sleep(5 * 1000)
+		println(p)
+	}
 }
